@@ -1,0 +1,110 @@
+body {
+  background-image: linear-gradient(-120deg, #d52923, #2acdff, #2394d5, #d5237c);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  };
+
+
+nav {
+  height: 20vh;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.navitems {
+  display: block;
+  text-align: center;
+}
+
+.navitems h2 {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navitems button {
+  color: #fff;
+  width: 20%;
+  height: 10vh;
+  border: solid 3px #fff;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: serif;
+  font-size: 20px;
+  margin: auto 0px;
+}
+.navitems button:hover {
+    background-color: rgb(255, 148, 148);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+  
+}
+.navitems button:active {
+  transform: translateY(+3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.fetchbtn:hover {
+  opacity: 80%;
+}
+
+.userdatacontainer {
+  width: 100%;
+  height: fit-content;
+  background-image: black
+}
+
+#main {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.profile {
+  background: linear-gradient(-90deg, #ff9895, #2acdff, #2394d5, #ffa4d2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 4vh;
+  margin-bottom: 8vh ;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: double;
+}
+
+.button {
+  font-size: large;
+}

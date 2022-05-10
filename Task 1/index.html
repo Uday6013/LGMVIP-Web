@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+  <span onclick="clearAll()" class="clearBtn">Clear All</span>
+</div>
+
+<ul id="myUL" >
+    <li>Lets Grow More VIP</li>
+</ul>
+<script>
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+</script>
+</body>
+</html>
